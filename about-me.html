@@ -65,6 +65,31 @@
 
 
 
+  <!-- Pop-up content -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Wireframe of this page</h2>
+    <img src="assets/about-me-wire.png" alt="Pop-up Image">
+    <p>See The complete WireFrame!.</p>
+    <a href="https://www.canva.com/design/DAFmvkcXUKo/KirtG4ogWhWv3PDVDXTi1Q/view?utm_content=DAFmvkcXUKo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-primary">See Now!</a>
+  </div>
+</div>
+
+
+  <script>
+    window.onload = function() {
+  setTimeout(function() {
+    document.getElementById('popup').style.display = 'block';
+  }, 5000);
+};
+
+document.getElementsByClassName('close')[0].onclick = function() {
+  document.getElementById('popup').style.display = 'none';
+};
+  </script>
+
+
 
 
 

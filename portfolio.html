@@ -227,6 +227,17 @@ export default Project2;
     </div>
   </footer>
 
+  <!-- Pop-up content -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Wireframe of this page</h2>
+    <img src="assets/portfolio-wire.png" alt="Pop-up Image">
+    <p>See The complete WireFrame!.</p>
+    <a href="https://www.canva.com/design/DAFmvrzGk8c/XeauOZrvOABxKupCkyyZ6A/view?utm_content=DAFmvrzGk8c&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-primary">See Now!</a>
+  </div>
+</div>
+
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -248,6 +259,16 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+
+window.onload = function() {
+  setTimeout(function() {
+    document.getElementById('popup').style.display = 'block';
+  }, 5000);
+};
+
+document.getElementsByClassName('close')[0].onclick = function() {
+  document.getElementById('popup').style.display = 'none';
+};
 
 
 

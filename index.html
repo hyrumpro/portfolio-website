@@ -209,6 +209,19 @@ Accessibility Standards: I am well-versed in accessibility standards such as WCA
 
 
 
+   <!-- Pop-up content -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Wireframe of this page</h2>
+    <img src="assets/home-wire.png" alt="Pop-up Image">
+    <p>See The complete WireFrame!.</p>
+    <a href="https://www.canva.com/design/DAFmvduJT4g/IpLxOR8bYDXBSFiKJOW4cw/view?utm_content=DAFmvduJT4g&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-primary">See Now!</a>
+  </div>
+</div>
+
+
+
 
 
   <!-- Scripts -->
@@ -221,6 +234,20 @@ Accessibility Standards: I am well-versed in accessibility standards such as WCA
     backSpeed: 50,
     loop: true
   });
+
+
+
+window.onload = function() {
+  setTimeout(function() {
+    document.getElementById('popup').style.display = 'block';
+  }, 5000);
+};
+
+document.getElementsByClassName('close')[0].onclick = function() {
+  document.getElementById('popup').style.display = 'none';
+};
+
+
 </script>
 
 
